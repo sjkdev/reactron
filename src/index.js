@@ -1,6 +1,7 @@
 import React from 'react'
 import { hydrate, render } from "react-dom"
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap.js'
 import App from './src/App'
 
 // Since we are using HtmlWebpackPlugin WITHOUT a template, we should create our own root node in the body element before rendering into it

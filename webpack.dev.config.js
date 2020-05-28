@@ -15,6 +15,10 @@ module.exports = {
         include: defaultInclude
       },
       {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
+      },
+      {
         test: /\.jsx?$/,
         use: [{ loader: 'babel-loader' }],
         include: defaultInclude
@@ -28,7 +32,18 @@ module.exports = {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
         use: [{ loader: 'file-loader?name=font/[name]__[hash:base64:5].[ext]' }],
         include: defaultInclude
-      }
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          'style-loader',
+          // Translates CSS into CommonJS
+          'css-loader',
+          // Compiles Sass to CSS
+          'sass-loader',
+        ],
+      },
     ]
   },
   target: 'electron-renderer',
@@ -52,8 +67,8 @@ module.exports = {
         ['.'],
         { shell: true, env: process.env, stdio: 'inherit' }
       )
-      .on('close', code => process.exit(0))
-      .on('error', spawnError => console.error(spawnError))
+        .on('close', code => process.exit(0))
+        .on('error', spawnError => console.error(spawnError))
     }
   }
 }

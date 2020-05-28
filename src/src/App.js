@@ -1,6 +1,6 @@
 import React, { Fragment, PureComponent } from 'react'
 import { Col, Row, Card, Button } from 'react-bootstrap'
-import '../assets/css/App.css'
+import '../assets/Sass/globalstyle.scss'
 
 class App extends PureComponent {
   constructor(props) {
