@@ -2542,7 +2542,7 @@ electron-osx-sign@^0.4.11:
     compare-version "^0.1.2"
     debug "^2.6.8"
     isbinaryfile "^3.0.2"
-    minimist "^1.2.0"
+    minimist "^1.2.3"
     plist "^3.0.1"
 
 electron-packager@^14.2.1:
