@@ -1,5 +1,7 @@
 $body-color: rgb(173, 255, 250);
+$main-font-color: rgb(102, 51, 153);
 
 body {
-  color: $body-color;
+  background-color: $body-color;
+  color: $main-font-color;
 }
