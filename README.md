@@ -1,4 +1,6 @@
-# Webpack React Electron Starter
+# REACTRON!
+
+### Webpack React Electron Starter
 
 > TODO
 | fix prod build
