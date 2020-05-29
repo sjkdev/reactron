@@ -1,4 +1,4 @@
-# REACTRON!
+# Reactron
 
 ### Webpack React Electron Starter
 
