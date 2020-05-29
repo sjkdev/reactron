@@ -22,8 +22,8 @@ class App extends PureComponent {
           <meta name="author" content="Sean King, Sorn King, Digital Wonderland" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Helmet>
-        <Col>
-          <Row>
+        <Row>
+          <Col>
             <Card>
               <h1>{this.state.title}</h1>
               <p>{this.state.spiel}</p>
