@@ -31,8 +31,8 @@ class App extends PureComponent {
             <Card>
               <p className="h1">{this.state.info}</p>
             </Card>
-          </Row>
-        </Col>
+          </Col>
+        </Row>
       </Fragment>
     )
   }
